@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX book template                           %%
+%% Author:  Amber Jain (http://amberj.devio.us/) %%
+%% License: ISC license                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[ebook,11pt,oneside,openany]{memoir}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{marginnote}
+\usepackage[most]{tcolorbox}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{wrapfig}
+\input{insbox}
+
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Huge}
+
+\definecolor{interviewer}{RGB}{242, 148, 37}
+\definecolor{interviewee}{RGB}{219, 98, 154}
+
+\begin{document}
+
+\begingroup
+\pagenumbering{gobble}
+\includegraphics[width=\textwidth]{Pictures/FrontCover.png}
+\centering
+\endgroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First page of book which contains 'stuff' like: %
+%  - Book title, subtitle                         %
+%  - Book author name                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Book's title and subtitle
+\title{\Huge \textbf{Candid Conversations in Code}  \\ \huge Interviews with the First Generation of Video Game Programmers}
+% Author
+\author{\textsc{by Ethan Johnson}}
+
+\frontmatter
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auto-generated table of contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\renewcommand*\contentsname{Table of Contents}
+\tableofcontents
+\chapter{Introduction}
+
+\input{Main Folder/01 - Introduction}
+
+\chapter{Acknowledgements}
+
+\input{Main Folder/02 - Acknowledgements}
+
+\mainmatter
+
+%%%%%%%%%%%
+% Preface %
+%%%%%%%%%%%
+
+\chapter[File \#1 Gregory Cox]{\centering File\#1 \\ Gregory Cox}
+\begin{center} {\LARGE Programmer for Cyan Engineering\\
+March 4 1974 to August 16 1974}
+\end {center}
+
+\input{Main Folder/03 - Chapter 1 Gregory Cox}
+
+\newpage
+
+\input{Main Folder/04 - Chapter 1-5 Gregory Cox}
+
+\chapter[File \#2 David Shepperd]{\centering File\#2 \\ \makebox[\linewidth][c]{David Shepperd}}
+\begin{center} {\LARGE Programmer for Atari Inc and Atari Games\\
+1976 to 2003}
+\end {center}
+
+\input{Main Folder/05 - Chapter 2 David Shepperd}
+
+\chapter[File \#3 Rich Moore]{\centering File\#3 \\ Rich Moore}
+\begin{center} {\LARGE Programmer and Manager for Atari Inc and Atari Games\\
+1978 to 1993}
+\end {center}
+
+\input{Main Folder/06 - Chapter 3 Rich Moore}
+
+\chapter[File \#4 Tom McHugh]{\centering File\#4 \\ Tom McHugh}
+\begin{center} {\LARGE Programmer for Dave Nutting Associates\\
+1975 to 1982}
+\end {center}
+
+\input{Main Folder/07 - Chapter 4 Tom McHugh}
+
+\chapter[File \#5 Jamie Fenton]{\centering File\#5 \\ Jamie Fenton}
+\begin{center} {\LARGE Programmer for Dave Nutting Associates\\
+1975 to 1982}
+\end {center}
+
+\input{Main Folder/08 - Chapter 5 Jamie Fenton}
+
+\chapter[File \#6 Mark Lesser]{\centering File\#6 \\ Mark Lesser}
+\begin{center} {\LARGE Programmer for Mattel, Parker Bros, and Electronic Arts\\
+1976 to 1999}
+\end {center}
+
+\input{Main Folder/09 - Chapter 6 Mark Lesser}
+
+\chapter[File \#7 Vic Tolomei]{\centering File\#7 \\ Vic Tolomei}
+\begin{center} {\LARGE Programmer and Game Designer for Exidy Inc.\\
+1979 to 1986}
+\end {center}
+
+\input{Main Folder/10 - Chapter 7 Vic Tolomei}
+
+\chapter[File \#8 David Rolfe]{\centering File\#8 \\ David Rolfe}
+\begin{center} {\LARGE Programmer for Technical Magic, ApH Consulting, and Activision\\
+1977 to 1983}
+\end {center}
+
+\input{Main Folder/11 - Chapter 8 David Rolfe}
+
+\chapter{Resources}
+
+\chapter{About the Author}
+
+\end{document}
